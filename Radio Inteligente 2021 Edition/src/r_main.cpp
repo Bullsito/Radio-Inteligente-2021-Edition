@@ -840,6 +840,7 @@ void analizarMensajes() {
 					
 					return;
 				}*/
+
 				srand((unsigned int)time(NULL));
 				int sonidoAleatorioSWAT = rand() % (S_SWAT_DOS - S_SWAT_UNO) + S_SWAT_UNO;
 				reproducirSonido(archivosDeSonido[sonidoAleatorioSWAT]);
