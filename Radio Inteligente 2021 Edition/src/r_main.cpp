@@ -824,10 +824,12 @@ void analizarMensajes() {
 		// Pedidos SWAT
 		if(radioInteligente.obtenerValorAviso(A_PEDIDOS_SWAT))
 		{
-			if (wcsstr(radioInteligente.obtenerNombreIndicativo(), L"D") != NULL ||
-				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"L") != NULL ||
-				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"A") != NULL ||
-				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"R") != NULL)
+			if (wcsstr(radioInteligente.obtenerNombreIndicativo(), L"D-") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"DAVID-") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"L-") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"A-") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"ROBERT-") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"R-") != NULL)
 			{
 				//reproducirSonido(archivosDeSonido[S_CODIGO_TAC]);
 				if (contieneMensajePalabras(mensajeCompleto, PC_PEDIDOS_SWAT))
