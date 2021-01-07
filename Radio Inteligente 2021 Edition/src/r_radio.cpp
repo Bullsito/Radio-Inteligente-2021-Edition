@@ -174,6 +174,60 @@ const char *PC_REP_UNIDADES_PROHIB[] = {
 	NULL
 };
 
+const char *PC_UNIDADES_SWAT[] = {
+
+	// SUPERVISORAS
+	"robert-10","r-10","adam-10","a-10","lincoln-10","l-10",
+	"robert-20","r-20","adam-20","a-20","lincoln-20","l-20",
+	"robert-30","r-30","adam-30","a-30","lincoln-30","l-30",
+	"robert-40","r-40","adam-40","a-40","lincoln-40","l-40",
+	"robert-50","r-50","adam-50","a-50","lincoln-50","l-50",
+	"robert-60","r-60","adam-60","a-60","lincoln-60","l-60",
+	"robert-70","r-70","adam-70","a-70","lincoln-70","l-70",
+	"robert-80","r-80","adam-80","a-80","lincoln-80","l-80",
+	"robert-90","r-90","adam-90","a-90","lincoln-90","l-90",
+
+	// ROBERT
+
+	"robert-35", "robert-36", 
+	"robert-37", "robert-38", "robert-39", 
+	"robert-41", "robert-42",
+	"robert-43", "robert-44", "robert-45", 
+	"robert-46",
+	"r-35", "r-36", 
+	"r-37", "r-38", "r-39", 
+	"r-41", "r-42",
+	"r-43", "r-44", "r-45", 
+	"r-46",
+
+	// LINCOLN
+	"l-35", "l-36",
+	"l-37", "l-38", "l-39",
+	"l-41", "l-42",
+	"l-43", "l-44", "l-45",
+	"l-46",
+	"lincoln-35", "lincoln-36",
+	"lincoln-37", "lincoln-38", "lincoln-39",
+	"lincoln-41", "lincoln-42",
+	"lincoln-43", "lincoln-44", "lincoln-45",
+	"lincoln-46",
+
+	// ADAM
+	"a-35", "a-36",
+	"a-37", "a-38", "a-39",
+	"a-41", "a-42",
+	"a-43", "a-44", "a-45",
+	"a-46",
+	"adam-35", "adam-36",
+	"adam-37", "adam-38", "adam-39",
+	"adam-41", "adam-42",
+	"adam-43", "adam-44", "adam-45",
+	"adam-46",
+	
+
+	NULL
+};
+
 const char *PC_PEDIDOS_SWAT[] = {
 
 	"codigo 77", "codigo setenta y siete", "se requiere metro", "solicita metro",

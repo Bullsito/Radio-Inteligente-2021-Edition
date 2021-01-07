@@ -68,6 +68,7 @@ extern const char *PC_CODIGO_CINCO[];
 extern const char *PC_CENTRALITA[];
 extern const char *PC_REP_UNIDADES[];
 extern const char *PC_REP_UNIDADES_PROHIB[];
+extern const char *PC_UNIDADES_SWAT[];
 extern const char *PC_PEDIDOS_SWAT[];
 extern const char *PC_PEDIDOS_GENERAL[];
 extern const char *PC_PEDIDOS_PROHIB[];
@@ -823,7 +824,9 @@ void analizarMensajes() {
 		// Pedidos SWAT
 		if(radioInteligente.obtenerValorAviso(A_PEDIDOS_SWAT))
 		{
-			if(contieneMensajePalabras(mensajeCompleto, PC_PEDIDOS_SWAT))
+
+
+			if(contieneMensajePalabras(mensajeCompleto, PC_UNIDADES_SWAT))
 			{
 				/* Sólo enviamos esta notificación a oficiales patrullando en unidades
 				   SWAT y a las unidades supervisoras */
@@ -840,12 +843,14 @@ void analizarMensajes() {
 					
 					return;
 				}*/
+				if (contieneMensajePalabras(mensajeCompleto, PC_PEDIDOS_SWAT))
+				{
+					srand((unsigned int)time(NULL));
+					int sonidoAleatorioSWAT = rand() % (S_SWAT_DOS - S_SWAT_UNO) + S_SWAT_UNO;
+					reproducirSonido(archivosDeSonido[sonidoAleatorioSWAT]);
 
-				srand((unsigned int)time(NULL));
-				int sonidoAleatorioSWAT = rand() % (S_SWAT_DOS - S_SWAT_UNO) + S_SWAT_UNO;
-				reproducirSonido(archivosDeSonido[sonidoAleatorioSWAT]);
-				
-				return;
+					return;
+				}
 			}
 			
 		}
