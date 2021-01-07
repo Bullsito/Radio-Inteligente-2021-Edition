@@ -824,25 +824,12 @@ void analizarMensajes() {
 		// Pedidos SWAT
 		if(radioInteligente.obtenerValorAviso(A_PEDIDOS_SWAT))
 		{
-
-
-			if(contieneMensajePalabras(mensajeCompleto, PC_UNIDADES_SWAT))
+			if (wcsstr(radioInteligente.obtenerNombreIndicativo(), L"D") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"L") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"A") != NULL ||
+				wcsstr(radioInteligente.obtenerNombreIndicativo(), L"R") != NULL)
 			{
-				/* Sólo enviamos esta notificación a oficiales patrullando en unidades
-				   SWAT y a las unidades supervisoras */
-
-				// #TODO# no coge las unidades oportunas (es general)
-
-				/*if(wcsstr(radioInteligente.obtenerNombreIndicativo(), L"DAVID") != NULL ||
-					wcsstr(radioInteligente.obtenerNombreIndicativo(), L"LINCOLN") != NULL ||
-					wcsstr(radioInteligente.obtenerNombreIndicativo(), L"ADAM") != NULL ||
-					wcsstr(radioInteligente.obtenerNombreIndicativo(), L"ROBERT") != NULL ||
-					wcsstr(radioInteligente.obtenerNombreIndicativo(), L"K9") != NULL)
-				{
-					reproducirSonido(archivosDeSonido[S_CODIGO_TAC]);
-					
-					return;
-				}*/
+				//reproducirSonido(archivosDeSonido[S_CODIGO_TAC]);
 				if (contieneMensajePalabras(mensajeCompleto, PC_PEDIDOS_SWAT))
 				{
 					srand((unsigned int)time(NULL));
@@ -851,6 +838,7 @@ void analizarMensajes() {
 
 					return;
 				}
+				return;
 			}
 			
 		}

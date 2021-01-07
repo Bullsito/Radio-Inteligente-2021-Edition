@@ -186,6 +186,17 @@ const char *PC_UNIDADES_SWAT[] = {
 	"robert-70","r-70","adam-70","a-70","lincoln-70","l-70",
 	"robert-80","r-80","adam-80","a-80","lincoln-80","l-80",
 	"robert-90","r-90","adam-90","a-90","lincoln-90","l-90",
+	"robert10","r10","adam10","a10","lincoln10","l10",
+	"robert20","r20","adam20","a20","lincoln20","l20",
+	"robert30","r30","adam30","a30","lincoln30","l30",
+	"robert40","r40","adam40","a40","lincoln40","l40",
+	"robert50","r50","adam50","a50","lincoln50","l50",
+	"robert60","r60","adam60","a60","lincoln60","l60",
+	"robert70","r70","adam70","a70","lincoln70","l70",
+	"robert80","r80","adam80","a80","lincoln80","l80",
+	"robert90","r90","adam90","a90","lincoln90","l90",
+
+
 
 	// ROBERT
 
@@ -199,6 +210,16 @@ const char *PC_UNIDADES_SWAT[] = {
 	"r-41", "r-42",
 	"r-43", "r-44", "r-45", 
 	"r-46",
+	"robert35", "robert36",
+	"robert37", "robert38", "robert39",
+	"robert41", "robert42",
+	"robert43", "robert44", "robert45",
+	"robert46",
+	"r35", "r36",
+	"r37", "r38", "r39",
+	"r41", "r42",
+	"r43", "r44", "r45",
+	"r46",
 
 	// LINCOLN
 	"l-35", "l-36",
@@ -211,6 +232,16 @@ const char *PC_UNIDADES_SWAT[] = {
 	"lincoln-41", "lincoln-42",
 	"lincoln-43", "lincoln-44", "lincoln-45",
 	"lincoln-46",
+	"l35", "l36",
+	"l37", "l38", "l39",
+	"l41", "l42",
+	"l43", "l44", "l45",
+	"l46",
+	"lincoln35", "lincoln36",
+	"lincoln37", "lincoln38", "lincoln39",
+	"lincoln41", "lincoln42",
+	"lincoln43", "lincoln44", "lincoln45",
+	"lincoln46",
 
 	// ADAM
 	"a-35", "a-36",
@@ -223,6 +254,16 @@ const char *PC_UNIDADES_SWAT[] = {
 	"adam-41", "adam-42",
 	"adam-43", "adam-44", "adam-45",
 	"adam-46",
+	"a35", "a36",
+	"a37", "a38", "a39",
+	"a41", "a42",
+	"a43", "a44", "a45",
+	"a46",
+	"adam35", "adam36",
+	"adam37", "adam38", "adam39",
+	"adam41", "adam42",
+	"adam43", "adam44", "adam45",
+	"adam46",
 	
 
 	NULL
