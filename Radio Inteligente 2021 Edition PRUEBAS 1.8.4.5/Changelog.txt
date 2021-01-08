@@ -1,0 +1,42 @@
+- Changelog:
+
+- 1.8.4.5:
+Sustituido el checkbox de los agentes sin asignación por el de los mensajes de radio junto al sonido correspondiente.
+Los reportes de agentes sin asignación se han añadido a los reportes de unidades.
+
+- 1.8.4.4:
+Fixeado los avisos de ByC del deposito.
+
+- 1.8.4.3:
+Añadido en fase Beta (sin testear) el aviso de retirada de vehiculos del deposito por parte de una persona en ByC (Añadido al conjunto de Centralita)
+Añadida la opción de descargar con sonidos doblados al castellano por parte de nuestro doblador @Fireplaceeee
+
+- 1.8.4.2:
+Fixeados los bugs que meti discretamente para meter mas actualizaciones (Ahora las unidades swat/supervisoras ya pueden recibir TODOS los avisos y no solo los de SWAT)
+
+- 1.8.4.1:
+Actualizado el sistema de avisos METRO-SWAT/Supervisores: Ahora toda unidad supervisora y/o unidad metro (independientemente de si son Robert o David, es decir Adam o Lincoln) recibirán exclusivamente los avisos cuando se solicite METRO-SWAT
+
+- 1.8.4:
+Actualizado texto de avisos de heridos (Ahora recoge el nuevo sistema de aviso de heridos)
+Añadido los sonidos para los avisos de disparos
+Añadido sonido de centralita 911 (Ahora recoge el sistema de llamadas al 911, ya sea por llamar o por aviso de crach)
+Actualizado el literal (texto) del menu configuracion de centralita (Ya no dice Roleados ya que abarca tambien los 911)
+Añadido el sonido de 10-15 o '15 (Traslado).
+Retiradas las opciones de actualizar la aplicación (No hay ningun servidor para que compruebe y descargue nuevos cambios)
+Añadidos los sonidos de solicitud METRO-SWAT
+TO-DO: Hacer que solo se envie a unidades METRO/SUPERVISORAS
+Actualización de los literales (Textos) de copyright y colaboradores.
+
+- 1.8.3.3:
+Actualizado el aviso de herido.
+Colocados nuevos sonidos a algunos avisos.
+
+- 1.8.3.2:
+Actualizado el aviso de herido.
+
+- 1.8.3.1:
+Quitado el aviso de 6 Charles.
+Quitado el aviso de codigo cuatro.
+distpatch solo ahora no hace sonar la radio.
+La radio de justicia suena como aviso importante y luego su contenido.
