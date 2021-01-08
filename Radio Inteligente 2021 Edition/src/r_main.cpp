@@ -1169,6 +1169,17 @@ void analizarMensajes() {
 			return;
 		}
 	}
+
+	// Avisos de ByC Deposito
+	if (radioInteligente.obtenerValorAviso(A_CENTRALITA)) {
+
+		if (strstr(mensajeCompleto, "está retirando un vehiculo del depósito: busqueda y captura prioridad") != NULL) {
+			reproducirSonido(archivosDeSonido[S_BEEP]);
+			return;
+		}
+	}
+
+
 	// Avisos de robo de coche
 	if(radioInteligente.obtenerValorAviso(A_ROBO_COCHE))
 	{
