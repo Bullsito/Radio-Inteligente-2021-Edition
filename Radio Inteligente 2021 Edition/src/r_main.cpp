@@ -768,7 +768,7 @@ void analizarMensajes() {
 			
 		}
 		// Avisos de agentes sin asignación
-		if (radioInteligente.obtenerValorAviso(A_PEDIDOS))
+		if (radioInteligente.obtenerValorAviso(A_REPORTES_UNIDADES))
 		{
 			if (strstr(mensajeCompleto, "sin asignacion") != NULL)
 			{
