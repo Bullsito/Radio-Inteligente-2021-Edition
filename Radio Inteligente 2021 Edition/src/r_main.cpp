@@ -1173,7 +1173,7 @@ void analizarMensajes() {
 	// Avisos de ByC Deposito
 	if (radioInteligente.obtenerValorAviso(A_CENTRALITA)) {
 
-		if (strstr(mensajeCompleto, "está retirando un vehiculo del depósito: busqueda y captura prioridad") != NULL) {
+		if (strstr(mensajeCompleto, "esta retirando un vehiculo del deposito: busqueda y captura prioridad") != NULL) {
 			reproducirSonido(archivosDeSonido[S_BEEP]);
 			return;
 		}
