@@ -717,10 +717,18 @@ void analizarMensajes() {
 
 	if (strstr(mensajeCompleto, "**[id: ") != NULL || strstr(mensajeCompleto, "**[rj ") != NULL || strstr(mensajeCompleto, ", c: ") != NULL || strstr(mensajeCompleto, "[radio id: ") != NULL || strstr(mensajeCompleto, "| ch: ") != NULL)
 	{
+		// Sonido de la radio por mensaje.
+		if (radioInteligente.obtenerValorAviso(A_MENSAJES_RADIO))
+		{
+			reproducirSonido(archivosDeSonido[S_MENSAJE_RADIO]);
+			Sleep(1000);
+
+		}
 		if (strstr(mensajeCompleto, "**[rj ") != NULL)
 		{
-			reproducirSonido(archivosDeSonido[S_IMPORTANTE]);
 			Sleep(300);
+			reproducirSonido(archivosDeSonido[S_IMPORTANTE]);
+			
 		}
 		// Avisos de reunión general (10-80)
 		if(radioInteligente.obtenerValorAviso(A_REUNION_GENERAL))
@@ -758,6 +766,15 @@ void analizarMensajes() {
 				return;
 			}
 			
+		}
+		// Avisos de agentes sin asignación
+		if (radioInteligente.obtenerValorAviso(A_PEDIDOS))
+		{
+			if (strstr(mensajeCompleto, "sin asignacion") != NULL)
+			{
+				reproducirSonido(archivosDeSonido[S_SOLICITUD]);
+				return;
+			}
 		}
 		// Avisos de petición de reporte de unidades
 		if(radioInteligente.obtenerValorAviso(A_REPORTES_UNIDADES))
@@ -1072,15 +1089,9 @@ void analizarMensajes() {
 				return;
 			}
 		}
-		// Avisos de agentes sin asignación
-		if(radioInteligente.obtenerValorAviso(A_AGENTES_SIN_ASIG))
-		{
-			if(strstr(mensajeCompleto, "sin asignacion") != NULL)
-			{
-				reproducirSonido(archivosDeSonido[S_SOLICITUD]);
-				return;
-			}
-		}
+		
+		
+
 	}
 	/* Los siguientes avisos ya no son de radio, por lo tanto,
 	si algún mensaje de radio contiene estos mensajes, no

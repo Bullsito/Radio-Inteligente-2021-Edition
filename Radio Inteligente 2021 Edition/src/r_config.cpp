@@ -97,7 +97,7 @@ INT_PTR CALLBACK VentanaConfiguracion(HWND hwndConf, UINT mensaje, WPARAM wParam
 			CheckDlgButton(hwndConf, ID_A_PEDIDOS, radioInteligente.obtenerValorAviso(A_PEDIDOS));
 			CheckDlgButton(hwndConf, ID_A_PEDIDOS_SWAT, radioInteligente.obtenerValorAviso(A_PEDIDOS_SWAT));
 			CheckDlgButton(hwndConf, ID_A_CUSTODIA, radioInteligente.obtenerValorAviso(A_CUSTODIA));
-			CheckDlgButton(hwndConf, ID_A_SIN_ASIG, radioInteligente.obtenerValorAviso(A_AGENTES_SIN_ASIG));
+			CheckDlgButton(hwndConf, ID_MENSAJES_RADIO, radioInteligente.obtenerValorAviso(A_MENSAJES_RADIO));
 			CheckDlgButton(hwndConf, ID_A_PANICO, radioInteligente.obtenerValorAviso(A_BOTON_PANICO));
 			CheckDlgButton(hwndConf, ID_A_APOYO, radioInteligente.obtenerValorAviso(A_APOYO_REF));
 			CheckDlgButton(hwndConf, ID_A_HERIDO, radioInteligente.obtenerValorAviso(A_HERIDO));
@@ -152,7 +152,7 @@ INT_PTR CALLBACK VentanaConfiguracion(HWND hwndConf, UINT mensaje, WPARAM wParam
 					radioInteligente.establecerValorAviso(A_PEDIDOS, IsDlgButtonChecked(hwndConf, ID_A_PEDIDOS));
 					radioInteligente.establecerValorAviso(A_PEDIDOS_SWAT, IsDlgButtonChecked(hwndConf, ID_A_PEDIDOS_SWAT));
 					radioInteligente.establecerValorAviso(A_CUSTODIA, IsDlgButtonChecked(hwndConf, ID_A_CUSTODIA));
-					radioInteligente.establecerValorAviso(A_AGENTES_SIN_ASIG, IsDlgButtonChecked(hwndConf, ID_A_SIN_ASIG));
+					radioInteligente.establecerValorAviso(A_MENSAJES_RADIO, IsDlgButtonChecked(hwndConf, ID_MENSAJES_RADIO));
 					radioInteligente.establecerValorAviso(A_BOTON_PANICO, IsDlgButtonChecked(hwndConf, ID_A_PANICO));
 					radioInteligente.establecerValorAviso(A_APOYO_REF, IsDlgButtonChecked(hwndConf, ID_A_APOYO));
 					radioInteligente.establecerValorAviso(A_HERIDO, IsDlgButtonChecked(hwndConf, ID_A_HERIDO));

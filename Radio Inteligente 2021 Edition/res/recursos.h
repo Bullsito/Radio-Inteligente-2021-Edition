@@ -36,7 +36,7 @@
 #define ID_A_ROBO_COCHE										40014
 #define ID_A_ROBO_NEG										40016
 #define ID_A_SEISADAM										40003
-#define ID_A_SIN_ASIG										40010
+#define ID_MENSAJES_RADIO									40010
 #define ID_A_REP_UNIDADES									40006
 #define	ID_AVISOS_ACTUAL									40022	
 #define ID_CONF_INDICATIVO									40020

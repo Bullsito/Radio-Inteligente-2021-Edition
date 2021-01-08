@@ -84,6 +84,7 @@ typedef enum {
     S_DISPAROS_DOS,
     S_SWAT_UNO,
     S_SWAT_DOS,
+    S_MENSAJE_RADIO,
     NUM_SONIDOS // Número total de sonidos
 } l_sonidos;
 
@@ -109,7 +110,7 @@ typedef enum {
     A_PEDIDOS,
     A_PEDIDOS_SWAT,
     A_CUSTODIA,
-    A_AGENTES_SIN_ASIG,
+    A_MENSAJES_RADIO,
     A_BOTON_PANICO,
     A_APOYO_REF,
     A_HERIDO,

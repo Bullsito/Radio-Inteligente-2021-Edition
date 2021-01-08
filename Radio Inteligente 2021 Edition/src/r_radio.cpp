@@ -77,7 +77,8 @@ const wchar_t *archivosDeSonido[] = {
 	L"disparos1.wav", // S_DISPAROS_UNO
 	L"disparos2.wav", // S_DISPAROS_DOS
 	L"swat1.wav", // S_SWAT_UNO
-	L"swat2.wav" // S_SWAT_DOS
+	L"swat2.wav", // S_SWAT_DOS
+	L"mensaje_radio.wav" // S_MENSAJE_RADIO
 };
 
 // Entradas de configuración para los avisos, enlazados con el enumerador
@@ -93,7 +94,7 @@ const char *avisosConfiguracion[] = {
     "a_pedidos", // A_PEDIDOS
     "a_pedidos_swat", // A_PEDIDOS_SWAT
     "a_custodia", // A_CUSTODIA
-    "a_agentes_sin_asig", // A_AGENTES_SIN_ASIG
+    "a_mensajes_radio", // A_MENSAJES_RADIO
     "a_boton_panico", // A_BOTON_PANICO
     "a_apoyo_ref", // A_APOYO_REF
     "a_herido", // A_HERIDO
@@ -126,6 +127,7 @@ const char *PC_REUNION_GENERAL[] = {
 
 	"1080 general en", "'80 general en", "80' general en",
 	"sala de asignaciones", "10-80 general en", "80 general en",
+	"10-80","'80",
 
 	NULL
 };
