@@ -81,12 +81,12 @@ VS_VERSION_INFO    VERSIONINFO
       VALUE "Comments",         "Radio Inteligente\0"
       VALUE "Developer",        "Doomer, Sopa, Bullsito && Fireplaceee\0"
       VALUE "FileDescription",  "Radio Inteligente\0"
-      VALUE "FileVersion",      "1.9\0"
+      VALUE "FileVersion",      "1.9.1\0"
       VALUE "InternalName",     "rintel\0"
       VALUE "LegalCopyright",   "GPLv3 (C) 2021 Doomer, Sopa, Bullsito && Fireplace\0"
       VALUE "OriginalFilename", "rintel.exe\0"
       VALUE "ProductName",      "Radio Inteligente\0"
-      VALUE "ProductVersion",   "1.9\0"
+      VALUE "ProductVersion",   "1.9.1\0"
     }
   }
   BLOCK "VarFileInfo"

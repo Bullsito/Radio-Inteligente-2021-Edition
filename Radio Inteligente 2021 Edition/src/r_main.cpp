@@ -715,7 +715,7 @@ void analizarMensajes() {
 	Primero analizaremos todos los mensajes de radio, es decir, aquellos que
 	empiecen con "**[" */
 
-	if (strstr(mensajeCompleto, "**[id: ") != NULL || strstr(mensajeCompleto, "**[rj ") != NULL || strstr(mensajeCompleto, ", c: ") != NULL || strstr(mensajeCompleto, "[radio id: ") != NULL || strstr(mensajeCompleto, "| ch: ") != NULL)
+	if (strstr(mensajeCompleto, "**[id: ") != NULL || strstr(mensajeCompleto, "** [rj ") != NULL || strstr(mensajeCompleto, ", c: ") != NULL || strstr(mensajeCompleto, "[radio id: ") != NULL || strstr(mensajeCompleto, "| ch: ") != NULL)
 	{
 		// Sonido de la radio por mensaje.
 		if (radioInteligente.obtenerValorAviso(A_MENSAJES_RADIO))
@@ -724,9 +724,9 @@ void analizarMensajes() {
 			Sleep(1000);
 
 		}
-		if (strstr(mensajeCompleto, "**[rj ") != NULL)
+		if (strstr(mensajeCompleto, "** [rj ") != NULL)
 		{
-			Sleep(300);
+			
 			reproducirSonido(archivosDeSonido[S_IMPORTANTE]);
 			
 		}
